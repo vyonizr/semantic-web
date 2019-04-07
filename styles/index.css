@@ -1,0 +1,188 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #0e5f71;
+  background-attachment: fixed;
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+}
+
+#vyonizr-logo {
+  margin-top: 0.5rem;
+  max-width: 85%;
+  height: auto;
+}
+
+div.about {
+  width: auto;
+}
+
+div.about p {
+  margin-bottom: 0.75rem;
+  padding: 0rem 0rem 0rem 0.05rem;
+  color: white;
+  text-align: justify;
+  text-align-last:center;
+  letter-spacing: 0.05rem;
+  -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+     -ms-animation: fadein 1s;
+      -o-animation: fadein 1s;
+         animation: fadein 1s;
+}
+
+/* START menu */
+div a.button {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.6rem 0rem 0.6rem 0.15rem; /* last value keeps the text centered due to letter spacing */
+  width: 9.8rem;
+  background-color: #FFFFFF;
+  color: #104868;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.02rem;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+  transition: all 0.4s;
+}
+
+div a.button:hover {
+  background-color: #107dac;
+  color: #FFFFFF;
+}
+/* END menu */
+
+/* Animation keyframes */
+@keyframes fadein {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+/* END Animation keyframes */
+
+/* Adaptive web design */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 0.95rem;
+  }
+
+/* vertically center */
+  div.container-fluid {
+    margin: 0;
+    position: fixed;
+    top: 43%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 33rem;
+    max-width: 100%;
+  }
+
+  div a.button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 0.3rem;
+    padding: 0.6rem 0.5rem;
+    letter-spacing: 0.2rem;
+    transition: all 0.4s;
+    font-size: 1rem;
+  }
+
+  div.social-media img {
+    margin-top: 0.5rem;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+    max-width: 17%;
+    height: auto;
+    vertical-align: top;
+  }
+
+  div.social-media img:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+/* ><><><><><><><><><><><><>< */
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 1.1rem;
+  }
+
+  div.container-fluid {
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  div.about {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 30rem;
+  }
+
+  div a.button {
+    font-size: 0.95rem;
+  }
+}
+/* ><><><><><><><><><><><><>< */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 1.2rem;
+  }
+
+  div.container-fluid {
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  div.about {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 36rem;
+  }
+}
+/* ><><><><><><><><><><><><>< */
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 1.3rem;
+  }
+
+  div.container-fluid {
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  div.about {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 36rem;
+  }
+
+  div a.button {
+    font-size: 0.8rem !important;
+  }
+}
+/* END Responsive web design */
